@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LayotAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alonso.daniel.personas.PrimaryController">
+   <children>
+      <Label layoutX="14.0" layoutY="40.0" prefHeight="48.0" prefWidth="76.0" text="Nombre">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="107.0" prefHeight="48.0" prefWidth="76.0" text="Apellidos">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="170.0" prefHeight="48.0" prefWidth="76.0" text="Edad">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NombreTF" layoutX="14.0" layoutY="76.0" />
+      <TextField fx:id="ApellidosTF" layoutX="16.0" layoutY="143.0" />
+      <TextField fx:id="EdadTF" layoutX="16.0" layoutY="206.0" />
+      <Button fx:id="AgregarBT" layoutX="24.0" layoutY="272.0" mnemonicParsing="false" onAction="#agregarPersonas" prefHeight="25.0" prefWidth="130.0" text="Agregar Persona" />
+      <TableView fx:id="TablaTV" layoutX="244.0" layoutY="55.0" prefHeight="361.0" prefWidth="474.0">
+        <columns>
+          <TableColumn fx:id="NombreTC" prefWidth="142.0" text="Nombre" />
+          <TableColumn fx:id="ApellidosTC" prefWidth="175.0" text="Apellidos" />
+            <TableColumn fx:id="EdadTC" prefWidth="156.0" text="Edad" />
+        </columns>
+      </TableView>
+      <Button fx:id="ModificarBT" layoutX="244.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Modificar" />
+      <Button fx:id="EliminarBT" layoutX="588.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Eliminar" />
+   </children>
+</AnchorPane>
