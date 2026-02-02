@@ -36,7 +36,7 @@
             <TableColumn fx:id="EdadTC" prefWidth="156.0" text="Edad" />
         </columns>
       </TableView>
-      <Button fx:id="ModificarBT" layoutX="244.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Modificar" />
-      <Button fx:id="EliminarBT" layoutX="588.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Eliminar" />
+      <Button fx:id="ModificarBT" layoutX="244.0" layoutY="434.0" mnemonicParsing="false" onAction="#modificarPersonas" prefHeight="25.0" prefWidth="130.0" text="Modificar" />
+      <Button fx:id="EliminarBT" layoutX="588.0" layoutY="434.0" mnemonicParsing="false" onAction="#eliminarPersonas" prefHeight="25.0" prefWidth="130.0" text="Eliminar" />
    </children>
 </AnchorPane>
